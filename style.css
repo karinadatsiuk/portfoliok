@@ -3,11 +3,16 @@
     --white: #ffffff;
     --green: #0B3B17;
 }
+.dark-theme{
+    --black: #fff;
+    --white: #000;
+}
 body{
     margin:0;
     font-family: 'Montserrat', sans-serif;
     font-size: 1rem;
     color:var(--black);
+    background-color: var(--white);
     
 }
 h1, h2, h3, h4, h5, h6{
@@ -73,11 +78,18 @@ p{
     font-weight: bold;
     text-transform: uppercase;
     text-decoration: none;
+    
 
 }
 .nav_link:hover{
-    border-bottom: 2px solid black;
+    border-bottom: 2px solid var(--black);
     padding: 0 0 4px;
+}
+.nav-img{
+    width: 30px;
+    cursor: pointer;
+    margin-left: 20px;
+    
 }
 .intro_inner{
     display: flex;
@@ -85,7 +97,7 @@ p{
     padding-bottom: 8rem;
     position: relative;
 
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid var(--black);
 }
 .intro_subtitle{
     color: var(--black);
@@ -133,8 +145,8 @@ p{
  opacity: 0.7;
 }
 .btn:hover{
-    background: #000000;
-    color: #ffffff;
+    background: var(--black);
+    color: var(--white);
 }
 .intro_photo{
   rotate: 360deg;
@@ -174,7 +186,7 @@ p{
 }
 .work_cat{
    font-size: 0.75rem;
-   color: #000000;
+   color: var(--black);
    text-transform: uppercase;
    margin-bottom: 0.8rem;
 }
